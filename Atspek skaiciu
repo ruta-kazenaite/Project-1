@@ -1,0 +1,21 @@
+import random
+
+print ("ATSPĖK SKAIČIŲ TARP 1-100")
+numbers = list(range(101))
+secret = random.choice(numbers)
+guess = 0
+count = 0
+print ('Jei pasiduodi - įvesk X')
+while guess != secret:
+    guess = input("Skaičius: ")
+    if guess == 'x' or guess == 'X':
+        print('Skaičius buvo: ')
+        print(secret)
+        break
+    elif int(guess) < secret:
+        print ("per mažas")
+    elif int(guess) > secret:
+        print ("per didelis")
+    elif int(guess) == secret:
+        print('Atspėjai!')
+        break
