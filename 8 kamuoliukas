@@ -1,0 +1,6 @@
+import random
+questions = ['KOKS KLAUSIMAS TAVE ČIA ATVEDĖ? ', 'KO NORI? ', 'AŠ VISKĄ ŽINAU, KO NORI MANĘS PAKLAUSTI? ']
+answers = ['TAIP :)', 'NE!!!', 'GAL...', 'TURĖTUM SAVĘS TO PAKLAUSTI', 'NŽN']
+while True:
+    input ('\n' + random.choice(questions) + 'PRIMENU - TIK TAIP/NE KLAUSIMAI! ')
+    print(random.choice(answers) + '\n')
