@@ -1,0 +1,19 @@
+print('VARDŲ SUJUNGĖJAS JŪSŲ PASLAUGOMS')
+
+while True:
+
+    n1 = input('\n'+'Įvesk pirmą vardą: ')
+    n1h = int((len(n1))/2)
+    n2 = input('Įvesk antrą vardą: ')
+    n2h = int((len(n2))/2)
+
+    n1h = n1[:n1h]
+    n2h = n2[n2h:]
+
+    print('Jūsų bendras vardas: ' + n1h + n2h)
+    yn = input('\n' + 'Dar kartą?')
+
+    if yn.startswith('t') or yn.startswith('T') or yn.startswith(''):
+        continue
+    elif yn.startswith('n') or yn.startswith('N'):
+        break
